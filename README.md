@@ -1,5 +1,5 @@
 # PASSWORD-LOCKER
-> This Python project allows people to create accounts, he or she has signed into, be it email, social media, entertainment or job portal accounts.
+This Python project allows people to create accounts, he or she has signed into, be it email, social media, entertainment or job portal accounts.
 
 
 ## Built With
