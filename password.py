@@ -60,7 +60,7 @@ class TestCredentials(unittest.TestCase):
         """
         Method to define the constructor
         """
-        self.cred = Credentials("email", "Barry@1234", "Barry")
+        self.cred = Credentials("Barry", "email", "Barry@1234")
 
     def test_init(self):
         """
@@ -81,7 +81,7 @@ class TestCredentials(unittest.TestCase):
         test for multiple credentials
         """
         self.cred.saveCredential()
-        test_cred = Credentials("email", "Barry", "Barry@1234") 
+        test_cred = Credentials("Barry", "email", "Barry@1234") 
         test_cred.saveCredential()
 
         self.assertEqual(len(Credentials.credentials), 2)
@@ -92,7 +92,7 @@ class TestCredentials(unittest.TestCase):
         
         """
         self.cred.saveCredential()
-        test_cred = Credentials("email", "Barry", "Barry@1234") 
+        test_cred = Credentials("Barry", "email", "Barry@1234") 
         test_cred.saveCredential()
 
         self.cred.deleteCredential()
