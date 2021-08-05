@@ -146,7 +146,7 @@ if __name__ == "__main__":
                 print("account name doesn't exist!\n")
 
         elif shortCode == 'del':
-            print("Enter credenti that you would like to be deleted")
+            print("Enter credential that you would like to be deleted")
             Account = input()
             if Credentials.credentialExist(Account):
                 Credentials.deleteCredential(Account)
