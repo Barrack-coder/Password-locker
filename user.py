@@ -146,14 +146,14 @@ if __name__ == "__main__":
                 print("account name doesn't exist!\n")
 
         elif shortCode == 'del':
-            print("Enter account that you would like to delete this account?")
+            print("Enter account that you would like to be deleted")
             Account = input()
             if Credentials.credentialExist(Account):
                 Credentials.deleteCredential(Account)
                 print("Account has been Successfully deleted")
 
             else:
-                print("account name doesn't exist")
+                print("account name doesn't exist here")
 
         elif shortCode == 'ex':
             print("Thank you for using this application.")
