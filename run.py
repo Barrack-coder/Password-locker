@@ -24,7 +24,7 @@ class User:
         """
         method that allows a user to log in after providing credentials
         """
-        print("You have Successfully Logged in!!!")
+        print("You have Successfully Logged in")
 
     def saveUser(self):
         """
@@ -108,7 +108,7 @@ class Credentials():
             for credential in Credentials.credentials:
                 if credential.account == account:
                     return True
-            print("Account doesn't exist")
+            print("Account doesn't exist.Create one to proceed")
 
         else:
             print("Credentials Not saved")
