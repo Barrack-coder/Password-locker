@@ -7,10 +7,6 @@ This Python project allows people to create accounts, he or she has signed into,
 - Python(version3.8)
 
 
-## Live Demo
-
-[Live Demo Link]()
-
 ## Getting Started
 
 To get a local copy, follow these simple example steps.
