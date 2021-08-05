@@ -24,10 +24,10 @@ if __name__ == "__main__":
     isTrue = True
     print("What is your name?")
     name= input()
-    print(f"Hello {name} Welcome to password manager.An application that manages and generate passwords.")
+    print(f"Hello {name} Welcome to password manager.An application that manages and generate passwords for you.")
     while isTrue == True:
         print(
-            "Use these short codes to proceed:\n\n 1. ca-Create Account\n 2. ha-Have an existing Account\n")
+            "Use these short codes to proceed:\n\n 1. ca-Create new Account\n 2. ha-Have an existing Account\n")
         shortCode = input().lower()
 
         if shortCode == 'ca':
