@@ -125,8 +125,8 @@ if __name__ == "__main__":
             if Credentials.displayCredential():
                 print(" Here is a List of your credentials:\n")
                 for credential in Credentials.credentials:
+                    accountuser = credential.username    
                     account = credential.account
-                    accountuser = credential.username
                     accountpassword = credential.password
                     print(
                         f"Account Name : {account}\n Account Username : {accountuser}\n Account Password: {accountpassword}\n")
@@ -146,7 +146,7 @@ if __name__ == "__main__":
                 print("account name doesn't exist!\n")
 
         elif shortCode == 'del':
-            print("Enter account that you would like to be deleted")
+            print("Enter credential that you would like to be deleted")
             Account = input()
             if Credentials.credentialExist(Account):
                 Credentials.deleteCredential(Account)

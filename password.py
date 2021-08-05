@@ -54,7 +54,7 @@ class TestUser(unittest.TestCase):
         method to test if users are correctly displayed
         """
         self.assertEqual(User.displayUser(), User.userList)
-
+        
 class TestCredentials(unittest.TestCase):
     def setUp(self):
         """
