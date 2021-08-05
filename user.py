@@ -14,7 +14,7 @@
 #                 self.new_user.save_user()
 #                 self.assertEqual (len(user.user_list),1)
 
-        # import pyperclip
+       
 import random
 import string
 
@@ -70,12 +70,12 @@ class Credentials():
     """
     credentials = []
 
-    def __init__(self, account, username, password):
+    def __init__(self,username ,account , password):
         """
         credentials
         """
-        self.account = account
-        self.username = username
+        self.account = username
+        self.username =account
         self.password = password
 
     def saveCredential(self):
@@ -85,12 +85,12 @@ class Credentials():
         Credentials.credentials.append(self)
 
     @classmethod
-    def createCredential(self, account, username, password):
+    def createCredential(self, username, account, password):
         """
         method that creates a new credential
         """
         newCredential = Credentials(
-            account, username, password)
+            username, account, password)
         return newCredential
 
     def searchCredential(account):
@@ -175,7 +175,7 @@ if __name__ == "__main__":
                     break
 
                 else:
-                    print("password is Invalid")
+                    print("password is Incorrect")
 
             createUser = User.createUser(username, password)
             User.saveUser(createUser)
@@ -186,7 +186,7 @@ if __name__ == "__main__":
 
         elif shortCode == 'ha':
             print("*"*100)
-            print("Enter your username and password")
+            print("Enter your username and password ASAP!")
             print("*"*100)
 
             print("Enter Username:")
@@ -199,10 +199,10 @@ if __name__ == "__main__":
                     if user.password == password:
                         print(user.login())
                     else:
-                        print("password enterd is invalid")
+                        print("password enterd is incorrect")
                         break
                 else:
-                    print("username enetered is  Invalid")
+                    print("username enetered is  Incorrect")
                     break
 
             break
@@ -237,7 +237,7 @@ if __name__ == "__main__":
                     break
 
                 else:
-                    print("Password Entered is Invalid")
+                    print("Password Entered is Incorrect")
 
             newCredential = Credentials.createCredential(
                 account, username, password)
