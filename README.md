@@ -50,7 +50,7 @@ Give a ⭐️ if you like this project!:
 
 ## Acknowledgments
 
-- We are appreciating Moringa school for the skills and opportunity to learn :)
+- I appreciating Moringa school for the skills and opportunity to learn.
 
 ## 📝 License
 
